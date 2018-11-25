@@ -42,6 +42,6 @@ In our application, we first apply **kirsh edge detection** on the selected imag
 ### Circle Detection For Unknown Radius <br />
 
 <p align="center">
-<img src="/Image/readme/Circlealgorithm.gif" height="70%" width="70%">   
+<img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
 </p>
         
