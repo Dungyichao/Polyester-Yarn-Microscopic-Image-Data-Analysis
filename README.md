@@ -1,7 +1,7 @@
 # Polyester-Yarn-Microscopic-Image-Data-Analysis <br />
 Give a roughly or manually measurement of fibers from the microscopic image of the cross section of yarn <br />
 <p align="center">
-<img src="/Image/QCRuler_Demo.gif" height="80%" width="80%"> 
+<img src="/Image/All1.gif" height="80%" width="80%"> 
 </p>  
 
 ## Function of the Project <br />
