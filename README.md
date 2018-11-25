@@ -41,6 +41,8 @@ In our application, we first apply **kirsh edge detection** on the selected imag
       
 ### Circle Detection For Unknown Radius <br />
 
+We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. We've already have some basic knowledge on the dimension of the circle, so we can narrow down the radius searching area from r = 11 to r = 15. <br />
+
 <p align="center">
 <img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
 </p>
