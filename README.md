@@ -29,11 +29,11 @@ The gist of this application is circular object detection. The more percise term
 There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I just mentioned. Some basic convolution method can refer to this video: https://www.youtube.com/watch?v=XuD4C8vJzEQ<br />
 
 <p align="left">
-<img src="/Image/readme/conv1.gif" height="70%" width="70%">                
+<img src="/Image/readme/conv1.gif" height="50%" width="50%">                
 </p>
 
 <p align="right">
-<img src="/Image/readme/conv.gif" height="40%" width="40%">                
+<img src="/Image/readme/conv.gif" height="35%" width="35%">                
 </p>
 
 In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Prewitt edge detection** on the image which has been processed by the kirsh edge detection.  
