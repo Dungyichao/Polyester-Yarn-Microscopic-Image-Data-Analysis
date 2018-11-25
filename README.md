@@ -30,7 +30,7 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
 
 <p align="center">
 <img src="/Image/readme/conv1.gif" height="50%" width="50%">   
-<img src="/Image/readme/conv.gif" height="35%" width="35%">  
+<img src="/Image/readme/conv.gif" height="25%" width="25%">  
 </p>
 
 
