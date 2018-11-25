@@ -12,5 +12,5 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 
 * Provide an user interface to manually measure the width in the cross section of the fiber. <br />
 <p align="center">
-<img src="/Image/Manual2.gif" height="80%" width="80%"> 
+<img src="/Image/Manual4.gif" height="80%" width="80%"> 
 </p>
