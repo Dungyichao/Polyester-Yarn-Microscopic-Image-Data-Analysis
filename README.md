@@ -19,3 +19,7 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 <p align="center">
 <img src="/Image/Manual4.gif" height="80%" width="80%"> 
 </p>
+
+# About the Theory <br />
+
+The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. 
