@@ -43,7 +43,9 @@ In our application, we first apply **kirsh edge detection** on the selected imag
 
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. We've already have some basic knowledge on the dimension of the circle in the given image, so we can narrow down the radius searching area for example from r = 10 to r = 15. We will detect how many pixels which the value (either Green or Red or Blue value) is larger than a given threshold on the circle at given radius. The number of pixels (vote) should also be larger than a given threshold. </p>
 
-In the following example, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
+In the following example, for yellow dot as the center of circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
+
+In another case, say the green dot as the center, we can see r = 10 (count=5), r = 11 (count=12), r = 12 (count=15), r = 13 (count=17), r = 14 (sorry, I forgot to make this one), r = 15 (count=21). If we set the count (vote) threshold = 30, then no radius will be taken into decision. Thus, there is no any circle at the green dot.  <br /> 
 
 <p align="center">
 <img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
