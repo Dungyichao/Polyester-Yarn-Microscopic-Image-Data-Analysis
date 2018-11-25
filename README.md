@@ -33,7 +33,7 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
 </p>
 
 <p align="right">
-<img src="/Image/readme/conv.gif" height="70%" width="70%">                
+<img src="/Image/readme/conv.gif" height="40%" width="40%">                
 </p>
 
 In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Prewitt edge detection** on the image which has been processed by the kirsh edge detection.  
