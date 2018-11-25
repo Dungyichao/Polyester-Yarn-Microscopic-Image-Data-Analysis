@@ -28,4 +28,4 @@ The gist of this application is circular object detection. The more percise term
 
 There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I just mentioned. <br />
 
-In our application, we first apply ```kirsh edge detection``` on the selected image, and then we apply the ```Prewitt edge detection``` on the image which has been processed by the kirsh edge detection.  
+In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Prewitt edge detection** on the image which has been processed by the kirsh edge detection.  
