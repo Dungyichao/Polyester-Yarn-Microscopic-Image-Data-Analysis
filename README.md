@@ -22,4 +22,8 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 
 # About the Theory <br />
 
-The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. 
+The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. Second, we need to detect the circle. <br />
+
+### Image Edge Detection <br />
+
+There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. <br />
