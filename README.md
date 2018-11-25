@@ -26,4 +26,5 @@ The gist of this application is circular object detection. The more percise term
 
 ### Image Edge Detection <br />
 
-There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. <br />
+There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. <br /> We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I mentioned. 
+
