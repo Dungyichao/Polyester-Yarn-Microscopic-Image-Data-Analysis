@@ -36,7 +36,7 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
 
 In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Prewitt edge detection** on the image which has been processed by the kirsh edge detection.  
 <p align="center">
-<img src="/Image/readme/Edgedetection.JPG" height="100%" width="100%">   
+<img src="/Image/readme/Edgedetection.JPG" height="80%" width="80%">   
 </p>
       
 ### Circle Detection <br />
