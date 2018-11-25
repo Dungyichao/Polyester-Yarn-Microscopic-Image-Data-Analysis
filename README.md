@@ -6,14 +6,14 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 
 # Function of the Project <br />
 
-## Auto Detection <br />
+### Auto Detection <br />
 
 * Detect each fiber in the yarn automatically and give a roughly measurement of the width in the cross section of the fiber. <br />
 <p align="center">
 <img src="/Image/Auto1.gif" height="80%" width="80%"> 
 </p>
 
-## Manual Measurement <br />
+### Manual Measurement <br />
 
 * Provide an user interface to manually measure the width in the cross section of the fiber. <br />
 <p align="center">
