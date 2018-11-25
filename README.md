@@ -26,7 +26,7 @@ The gist of this application is circular object detection. The more percise term
 
 ### Image Edge Detection <br />
 
-There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I just mentioned. Some basic convolution method can refer to this video: https://www.youtube.com/watch?v=XuD4C8vJzEQ<br />
+There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I just mentioned. Some basic convolution method can refer to this video: https://www.youtube.com/watch?v=XuD4C8vJzEQ and the following GIF from OpenCV<br />
 
 <p align="center">
 <img src="/Image/readme/conv1.gif" height="50%" width="50%">   
