@@ -51,7 +51,9 @@ In another case, say the green dot as the center, we can see r = 10 (count=5), r
 <img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
 </p>
 
-The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. <br /> 
+We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
+
+The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` 3 * "α π σ" ``` <br /> 
 
 
 
