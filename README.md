@@ -61,7 +61,13 @@ The application will examine every 4 columns of pixels in every 4 row of pixels.
 
 <p align="center">
 <img src="/Image/readme/Detect.gif" height="25%" width="25%">   
- </p>       
+ </p>   
+ 
+ <p align="center">
+<img src="/Image/readme/Merge-FirstStep.gif" height="25%" width="25%">   
+ </p> 
+  
+       
        
       
 # Some Cool Function <br />
