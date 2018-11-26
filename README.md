@@ -60,7 +60,7 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 The application will examine every 3 columns of pixels in each row of pixels. <br />
 
 <p align="center">
-<img src="/Image/readme/Search.gif" height="60%" width="60%">   
+<img src="/Image/readme/Search.gif" height="25%" width="25%">   
  </p>       
 
 # Some Cool Function <br />
