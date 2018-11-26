@@ -55,6 +55,13 @@ We make a little change on the vote system. When determine the radius, say at r 
 
 The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` 3 * π * r * Accuracy ``` where the accuracy is given by the user. If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
 
+### Merge Circle <br />
+
+The application will examine every 3 columns of pixels in each row of pixels. <br />
+
+<p align="center">
+<img src="/Image/readme/Search.gif" height="60%" width="60%">   
+ </p>       
 
 # Some Cool Function <br />
 
