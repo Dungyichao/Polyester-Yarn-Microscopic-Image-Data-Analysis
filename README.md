@@ -56,5 +56,12 @@ We make a little change on the vote system. When determine the radius, say at r 
 The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` 3 * π * r * Accuracy ``` where the accuracy is given by the user. <br /> 
 
 
+# Some Cool Function <br />
 
-        
+### Draw line and measure on the Image and Zoom in <br />
+
+There is a great post which I refer to : https://stackoverflow.com/questions/51138565/how-to-measure-length-of-line-which-is-drawn-on-image-c-sharp <br />
+
+
+
+
