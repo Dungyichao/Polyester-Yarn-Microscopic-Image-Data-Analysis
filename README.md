@@ -57,7 +57,7 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 
 ### Merge Circle <br />
 
-The application will examine every 3 columns of pixels in each row of pixels. <br />
+The application will examine every 4 columns of pixels in every 4 row of pixels. <br />
 
 <p align="center">
 <img src="/Image/readme/Search.gif" height="25%" width="25%">   
