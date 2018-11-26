@@ -41,6 +41,12 @@ In our application, we first apply **kirsh edge detection** on the selected imag
       
 ### Circle Detection For Unknown Radius <br />
 
+The application will examine the pixel every 4 columns for every 4 rows in the image showing in the following GIF. The pixel marked with yellow will be regarded as the center of a circle.<br />
+
+<p align="center">
+<img src="/Image/readme/Detect.gif" height="25%" width="25%">   
+</p>   
+
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. We've already have some basic knowledge on the dimension of the circle in the given image, so we can narrow down the radius searching area for example from r = 10 to r = 15 (unit in pixel). The user can enter the MinR and MaxR to set the searching area. We will detect how many pixels which the value (either Green or Red or Blue value) is larger than a given threshold on the circle at given radius (we examine the pixel value every 3 degree on the circle to reduce the calculation time). The number of pixels (vote) should also be larger than a given threshold. </p>
 
 In the following example, for yellow dot as the center of circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
@@ -55,13 +61,9 @@ We make a little change on the vote system. When determine the radius, say at r 
 
 The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` 3 * π * r * Accuracy ``` where the accuracy is given by the user. If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
 
+
+
 ### Merge Circle <br />
-
-The application will examine the pixel for every 4 columns in every 4 rows showing in the following GIF. The pixel marked with yellow will be regarded as the center of a circle.<br />
-
-<p align="center">
-<img src="/Image/readme/Detect.gif" height="25%" width="25%">   
- </p>   
  
  <p align="center">
 <img src="/Image/readme/Merge-FirstStep.gif" height="65%" width="65%">   
