@@ -108,6 +108,8 @@ pictureBox1.ClientSize = new Size(w, h);
 
 
 ### UI Design <br />
+
+I pretty like the UI design by the following youtube link.  
 https://www.youtube.com/watch?v=nLfzH4xOVqo
 
 
