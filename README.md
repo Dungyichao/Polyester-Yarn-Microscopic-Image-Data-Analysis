@@ -96,7 +96,7 @@ We do the merge process twice to further combine the circles and the result does
 
 There is a great post which I refer to : https://stackoverflow.com/questions/51138565/how-to-measure-length-of-line-which-is-drawn-on-image-c-sharp <br />
 
-Notice that you should first create a panel and make the AutoSize properties to False and the AutoScroll properties to True. Second, put the PictureBox on this panel (Do not make the PictureBox size bigger than the panel). Set the SizeMode of the PictureBox to Zoom. Follow the steps in the post and then you can have the zoom in and zoom out function. Maybe the image in the PictureBox changes the position after the first zoom in or out. You can zoom the image with zoom = 1f when loading the image ( the user will not notice that). 
+Notice that you should first create a panel and make the AutoSize properties to False and the AutoScroll properties to True. Second, put the PictureBox on this panel (Do not make the PictureBox size bigger than the panel). Set the SizeMode of the PictureBox to Zoom. Follow the steps in the post and then you can have the zoom in and zoom out function. Maybe the image in the PictureBox changes the position after the first zoom in or out. You can put the following code when loading the image so that the image will only change the position for this time without zooming the image ( the user will not notice that). 
 
 ```
 float zoom = 1f;
