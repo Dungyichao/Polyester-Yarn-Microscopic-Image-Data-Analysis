@@ -92,10 +92,13 @@ We do the merge process twice to further combine the circles and the result does
 
 # Some Cool Function <br />
 
-### Draw line and measure on the Image and Zoom in <br />
+### Zoom in to Draw Line and Measure on the Image <br />
 
 There is a great post which I refer to : https://stackoverflow.com/questions/51138565/how-to-measure-length-of-line-which-is-drawn-on-image-c-sharp <br />
 
+
+### UI Design <br />
+https://www.youtube.com/watch?v=nLfzH4xOVqo
 
 
 
