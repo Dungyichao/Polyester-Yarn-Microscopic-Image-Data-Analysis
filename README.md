@@ -8,11 +8,13 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 GIF 1
 </p>
 
+
 # Function of the Project <br />
 
 ### Auto Detection <br />
 
 * Detect each fiber in the yarn automatically and give a roughly measurement of the width in the cross section of the fiber. <br />
+
 <p align="center">
 <img src="/Image/Auto1.gif" height="80%" width="80%"> 
 </p>
@@ -20,6 +22,8 @@ GIF 1
 <p align="center">
 GIF 2
 </p>
+
+There are four parameters which require specify by the user. ```Min R``` and ```Max R``` are for definding the searching space. ```PixThred``` is the threshold of pixels value which the user want to detect (The value ranges from 0 to 255. RGB value are the same because we are analyzing the grayscale image). ```Accuracy``` is to define what the criteria is to define a circle. The smaller the accuracy, the application will be more susceptable to the noise and give some circle with only a few white dot on that circle. However, if you set the accuracy too high, the application will hardly give all the circle detection. ```Small``` is the ratio compares with the largest circle (Marked in blue) which the application can detect in the image. If any circle compares with the largest one smaller than the ratio, will be marked as red. Other circle will be marked as green. <br />
 
 ### Manual Measurement <br />
 
