@@ -78,7 +78,8 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
  The algorithm might draw many circles which are pretty close to the ground truth. The merge process is to determine which circles should be combined together because they are indicating the same ground truth. Circles which are close enough to each other will be assigned to the same group. We define ``` Distance of two center of distinct circles < ( radius of one circle + radius of another circle ) / 2 ``` as close to each other. The determine process is illustrated in the following GIF. We examine each of the circles provided by the Circle Hough Transform Algorithm. Thus, the number of groups is equal to the number of circles.  <br />
  
  <p align="center">
-<img src="/Image/readme/Merge-FirstStep.gif" height="65%" width="65%">   
+<img src="/Image/readme/Merge-FirstStep.gif" height="65%" width="65%">  
+  GIF1
  </p> 
  
 The circles in the same group will be combined to one circle. We use the concept of center of mass to claculate the center of merged circle ( x <sub>merged</sub> , y <sub>merged</sub> ) and the radius ( r <sub>merged</sub> ).  <br />
