@@ -81,8 +81,8 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 <img src="/Image/readme/Merge-FirstStep.gif" height="65%" width="65%">  
  </p> 
  
-<p style="text-align: center;"> 
- GIF1
+<p align="center">
+GIF1
 </p>
 
  
