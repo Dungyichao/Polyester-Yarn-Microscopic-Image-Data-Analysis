@@ -4,6 +4,10 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 <img src="/Image/All1.gif" height="80%" width="80%"> 
 </p>  
 
+<p align="center">
+GIF 1
+</p>
+
 # Function of the Project <br />
 
 ### Auto Detection <br />
@@ -13,11 +17,19 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 <img src="/Image/Auto1.gif" height="80%" width="80%"> 
 </p>
 
+<p align="center">
+GIF 2
+</p>
+
 ### Manual Measurement <br />
 
 * Provide an user interface to manually measure the width in the cross section of the fiber. <br />
 <p align="center">
 <img src="/Image/Manual4.gif" height="80%" width="80%"> 
+</p>
+
+<p align="center">
+GIF 3
 </p>
 
 # About the Theory <br />
@@ -33,10 +45,18 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
   <!-- <img src="/Image/readme/conv.gif" height="25%" width="25%">   -->
 </p>
 
+<p align="center">
+GIF 4
+</p>
+
 
 In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Prewitt edge detection** on the image which has been processed by the kirsh edge detection.  
 <p align="center">
 <img src="/Image/readme/Edgedetection.JPG" height="60%" width="60%">   
+</p>
+
+<p align="center">
+Image 1
 </p>
       
 ### Circle Detection For Unknown Radius <br />
@@ -47,6 +67,9 @@ The application will examine the pixel every 4 columns for every 4 rows in the i
 <img src="/Image/readme/Detect.gif" height="25%" width="25%">   
 </p>   
 
+<p align="center">
+GIF 5
+</p>
      
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
  
@@ -55,6 +78,10 @@ We've already have some basic knowledge on the dimension of the circle in the gi
 
 <p align="center">
 <img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
+</p>
+
+<p align="center">
+GIF 6
 </p>
 
 In the above example, for yellow dot as the center of circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
@@ -66,6 +93,10 @@ The voting process is illustrated in the following GIF. The yellow dot is the ce
 <p align="center">
 <img src="/Image/readme/examine.gif" height="45%" width="45%">   
 </p> 
+
+<p align="center">
+GIF 7
+</p>
 
 We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
 
@@ -82,10 +113,9 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
  </p> 
  
 <p align="center">
-GIF1
+GIF 8
 </p>
 
- 
 The circles in the same group will be combined to one circle. We use the concept of center of mass to claculate the center of merged circle ( x <sub>merged</sub> , y <sub>merged</sub> ) and the radius ( r <sub>merged</sub> ).  <br />
 
 
@@ -93,7 +123,7 @@ The circles in the same group will be combined to one circle. We use the concept
  x <sub>merged</sub> = ( x <sub>1</sub> *  r <sub>1</sub> + x <sub>2</sub> * r <sub>2</sub> + x <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br />
  y <sub>merged</sub> = ( y <sub>1</sub> *  r <sub>1</sub> + y <sub>2</sub> * r <sub>2</sub> + y <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br /> 
 
-We do the merge process twice to further combine the circles and the result does improve. 
+We do the merge process twice to further combine the circles and the result does improve. Take the GIF 8 for example, Group 1, Group 2, and Group 3 will form three separate merged circles. However, they are indicating the same ground truth. Thus, we require another merging process to further combine these three circles which are so close to each other. <br /> 
 
 # Some Cool Function <br />
 
