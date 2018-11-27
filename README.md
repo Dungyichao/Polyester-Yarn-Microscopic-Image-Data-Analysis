@@ -5,7 +5,7 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 </p>  
 
 <p align="center">
-GIF 1
+GIF 1. All the function are demonstrated here.
 </p>
 
 
@@ -20,7 +20,7 @@ GIF 1
 </p>
 
 <p align="center">
-GIF 2
+GIF 2. Auto Measure function give the circle detection.
 </p>
 
 There are four parameters which require specify by the user. <br />
@@ -37,7 +37,7 @@ There are four parameters which require specify by the user. <br />
 </p>
 
 <p align="center">
-GIF 3
+GIF 3. The user can zoom in the image and do some measurement manually
 </p>
 
 # About the Theory <br />
@@ -54,7 +54,7 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
 </p>
 
 <p align="center">
-GIF 4
+GIF 4. Convolution (By OpenCV)
 </p>
 
 
@@ -64,7 +64,7 @@ In our application, we first apply **kirsh edge detection** on the selected imag
 </p>
 
 <p align="center">
-Image 1
+Image 1. Image processing from the original image to gray style with edge detection
 </p>
       
 ### Circle Detection For Unknown Radius <br />
@@ -76,7 +76,7 @@ The application will examine the pixel every 4 columns for every 4 rows in the i
 </p>   
 
 <p align="center">
-GIF 5
+GIF 5. The examine steps of the image. Each of the yellow pixels represent the center of circle. The application will examine different radius on each center of circles (see GIF 7).
 </p>
      
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
