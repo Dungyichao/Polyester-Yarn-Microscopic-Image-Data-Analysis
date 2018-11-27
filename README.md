@@ -75,6 +75,8 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 
 ### Merge Circle <br />
  
+ The algorithm might draw many circles which are pretty close to the ground truth. The merge process is to determine which circles should be combined together because they are indicating the same ground truth. Circles which are close enough to each other will be assigned to the same group. We define ``` Distance of two center of distinct circles < ( radius of one circle + radius of another circle ) / 2 ``` as close to each other. 
+ 
  <p align="center">
 <img src="/Image/readme/Merge-FirstStep.gif" height="65%" width="65%">   
  </p> 
