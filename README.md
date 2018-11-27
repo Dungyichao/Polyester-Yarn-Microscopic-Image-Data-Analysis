@@ -61,7 +61,7 @@ In the above example, for yellow dot as the center of circle, we can see r = 10 
 
 In another case, say the green dot as the center, we can see r = 10 (count=5), r = 11 (count=12), r = 12 (count=15), r = 13 (count=17), r = 14 (sorry, I forgot to make this one), r = 15 (count=21). If we set the count (vote) threshold = 30, then no radius will be taken into decision. Thus, there is no any circle at the green dot.  <br /> 
 
-The voting process is like the following GIF. <br /> 
+The voting process is illustrated in the following GIF. The yellow dot is the center of various circles. The red and the green dots are the examination point. If the red or the green point detects the white pixel, the vote will plus one for the current radius. <br /> 
 
 <p align="center">
 <img src="/Image/readme/examine.gif" height="45%" width="45%">   
