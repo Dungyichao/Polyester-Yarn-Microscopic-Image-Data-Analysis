@@ -77,7 +77,7 @@ The application will examine the pixel every 4 columns for every 4 rows in the i
 </p>   
 
 <p align="center">
-GIF 5. The examine steps of the image. Each of the yellow pixels represent the center of circle. The application will examine different radius on each center of circles (see GIF 7).
+GIF 5. The examine steps of the image (also see GIF 7).
 </p>
      
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
