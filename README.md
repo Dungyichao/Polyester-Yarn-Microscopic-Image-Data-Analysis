@@ -83,9 +83,9 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
  
 The circles in the same group will be combined to one circle. We use the concept of center of mass to claculate the center of merged circle ( x <sub>merged</sub> , y <sub>merged</sub> ) and the radius ( r <sub>merged</sub> ).  <br />
 
-r <sub>merged</sub> = ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... ) / number of circles in the group  <br />
-x <sub>merged</sub> = ( x <sub>1</sub> *  r <sub>1</sub> + x <sub>2</sub> * r <sub>2</sub> + x <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br />
-y <sub>merged</sub> = ( y <sub>1</sub> *  r <sub>1</sub> + y <sub>2</sub> * r <sub>2</sub> + y <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br /> 
+     r <sub>merged</sub> = ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... ) / number of circles in the group  <br />
+     x <sub>merged</sub> = ( x <sub>1</sub> *  r <sub>1</sub> + x <sub>2</sub> * r <sub>2</sub> + x <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br />
+     y <sub>merged</sub> = ( y <sub>1</sub> *  r <sub>1</sub> + y <sub>2</sub> * r <sub>2</sub> + y <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br /> 
 
 
 # Some Cool Function <br />
