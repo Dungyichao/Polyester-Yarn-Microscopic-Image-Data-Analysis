@@ -27,7 +27,7 @@ There are four parameters which require specify by the user. <br />
 ```Min R``` and ```Max R``` are for definding the searching space. <br />
 ```PixThred``` is the threshold of pixels value which the user want to detect (The value ranges from 0 to 255. RGB value are the same because we are analyzing the grayscale image). <br />
 ```Accuracy``` is to define what the criteria is to define a circle. The smaller the accuracy, the application will be more susceptable to the noise and give some circle with only a few white dot on that circle. However, if you set the accuracy too high, the application will hardly give all the circle detection. <br />
-```Small``` is the ratio compares with the largest circle (Marked in blue) which the application can detect in the image. If any circle compares with the largest one smaller than the ratio, will be marked as red. Other circle will be marked as green. <br />
+```Small``` is the ratio compares with the largest circle (marked in blue) which the application can detect in the image. If any circle compares with the largest one smaller than the ratio, will be marked in red. Other circle will be marked in green. <br />
 
 ### Manual Measurement <br />
 
