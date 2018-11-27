@@ -51,7 +51,7 @@ The application will examine the pixel every 4 columns for every 4 rows in the i
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
 
 <p align="center">
-<img src="/Image/readme/examine.gif" height="25%" width="25%">   
+<img src="/Image/readme/examine.gif" height="45%" width="45%">   
 </p>  
 
 We've already have some basic knowledge on the dimension of the circle in the given image, so we can narrow down the radius searching area for example from r = 10 to r = 15 (unit in pixel). The user can enter the MinR and MaxR to set the searching area. We will detect how many pixels which the value (either Green or Red or Blue value) is larger than a given threshold on the circle at given radius (we examine the pixel value every 3 degree on the circle to reduce the calculation time). The number of pixels (vote) should also be larger than a given threshold. </p>
