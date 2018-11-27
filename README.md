@@ -5,7 +5,7 @@ Give a roughly or manually measurement of fibers from the microscopic image of t
 </p>  
 
 <p align="center">
-GIF 1. All the function are demonstrated here.
+```GIF 1. All the function are demonstrated here.```
 </p>
 
 
