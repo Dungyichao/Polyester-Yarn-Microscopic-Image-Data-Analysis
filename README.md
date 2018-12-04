@@ -50,6 +50,9 @@ The whole process can be summrized into the following flow chart. Each step will
 <img src="/Image/readme/FlowChart1.png" height="95%" width="95%">   
 </p>
 
+<p align="center">
+Image 1. Flow chart of the algorithm
+</p>
         
 ### Image Edge Detection <br />
 
@@ -71,7 +74,7 @@ In our application, we first apply **kirsh edge detection** on the selected imag
 </p>
 
 <p align="center">
-Image 1. Image processing from the original image to gray style with edge detection
+Image 2. Image processing from the original image to gray style with edge detection
 </p>
       
 ### Circle Detection For Unknown Radius <br />
@@ -121,9 +124,17 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 <img src="/Image/readme/threshold.JPG" height="65%" width="65%">  
  </p>
  
-If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
 
+ 
+If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. The following image demonstrate the relationship between the accuracy and the result of circle detection. <br /> 
 
+<p align="center">
+<img src="/Image/readme/Accuracy.png" height="85%" width="85%">  
+ </p>
+ 
+<p align="center">
+Image 3. The relationship of the accuracy and the result of circle detection.
+</p>
 
 ### Merge Circle <br />
  
