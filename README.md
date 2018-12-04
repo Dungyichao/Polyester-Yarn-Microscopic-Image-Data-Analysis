@@ -118,7 +118,7 @@ We make a little change on the vote system. When determine the radius, say at r 
 The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` [ 2 * π * ( r - 1  + r + r + 1 ) * Accuracy / 3 ] * [ 3 / 2 ]  ==>  3πr *  Accuracy``` where the accuracy is given by the user. <br />
 
 <p align="center">
-<img src="/Image/readme/threshold.JPG" height="85%" width="85%">  
+<img src="/Image/readme/threshold.JPG" height="65%" width="65%">  
  </p>
  
 If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
