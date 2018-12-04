@@ -47,8 +47,7 @@ The gist of this application is circular object detection. The more percise term
 
 The whole process can be summrized into the following flow chart. <br />
 <p align="center">
-<img src="/Image/readme/conv1.gif" height="50%" width="50%">   
-  <!-- <img src="/Image/readme/FlowChart.png" height="95%" width="95%">   -->
+<img src="/Image/readme/FlowChart.png" height="95%" width="95%">   
 </p>
 
         
