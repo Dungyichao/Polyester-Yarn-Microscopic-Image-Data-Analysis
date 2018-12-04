@@ -14,7 +14,7 @@ GIF 1. All the function are demonstrated here.
 
 ### Auto Detection <br />
 
-* Detect each fiber in the yarn automatically and give a roughly measurement of the width in the cross section of the fiber. <br />
+* Detect each fiber in the yarn automatically and give a roughly measurement of the diameter (unit in pixel) in the cross section of the fiber. <br />
 
 <p align="center">
 <img src="/Image/Auto1.gif" height="80%" width="80%"> 
@@ -45,6 +45,13 @@ GIF 3. The user can zoom in the image and do some measurement manually
 
 The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. Second, we need to detect the circle. <br />
 
+The whole process can be summrized into the following flow chart. <br />
+<p align="center">
+<img src="/Image/readme/conv1.gif" height="50%" width="50%">   
+  <!-- <img src="/Image/readme/FlowChart.png" height="95%" width="95%">   -->
+</p>
+
+        
 ### Image Edge Detection <br />
 
 There are various kind of edge detection algorithm such as Laplacian, Sobel, Kirsch and Prewitt. You can refer to this article by this link : https://softwarebydefault.com/2013/05/11/image-edge-detection/. We use two files **```Matrix.cs```** and **```ExtBitmap.cs```** provided by the website which I just mentioned. Some basic convolution method implemented in the edge detection can refer to this video: https://www.youtube.com/watch?v=XuD4C8vJzEQ and the following GIF from OpenCV. <br />
