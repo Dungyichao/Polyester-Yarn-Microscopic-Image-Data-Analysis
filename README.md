@@ -173,3 +173,10 @@ https://www.youtube.com/watch?v=nLfzH4xOVqo
 
 The edge detection result is not ideal for some of the pictures given by our quality control department. Some bad image conversion result are as the following. <br />
 
+<p align="center">
+<img src="/Image/readme/bad3.JPG" height="75%" width="75%">  
+</p>
+
+
+      
+
