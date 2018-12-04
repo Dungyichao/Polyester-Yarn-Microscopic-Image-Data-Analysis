@@ -113,7 +113,7 @@ The voting process is illustrated in the following GIF. The yellow dot is the ce
 </p> 
 
 <p align="center">
-GIF 7. Voting Process
+GIF 7. Voting Process ( Searching space r = 3 ~ r = 6 )
 </p>
 
 We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
