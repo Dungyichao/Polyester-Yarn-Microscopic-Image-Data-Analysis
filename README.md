@@ -169,9 +169,9 @@ I pretty like the UI design by the following youtube link. <br />
 https://www.youtube.com/watch?v=nLfzH4xOVqo
 
 
-### Problem Need to be Solved <br />
+# Problem Need to be Solved <br />
 
-The edge detection result is not ideal for some of the pictures given by our quality control department. Some bad image conversion result are as the following. <br />
+The edge detection result is not ideal for some of the pictures given by our quality control department which lead to poor circle detection. Some bad image conversion result are as the following. <br />
 
 <p align="center">
 <img src="/Image/readme/bad3.JPG" height="75%" width="75%">  
