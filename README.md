@@ -115,7 +115,7 @@ GIF 7
 
 We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
 
-The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` 3 * π * r * Accuracy ``` where the accuracy is given by the user. If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
+The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` [ 2 * π * ( r - 1  + r + r + 1 ) * Accuracy / 3 ] * [ 3 / 2 ]  ==>  3πr *  Accuracy``` where the accuracy is given by the user. If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. <br /> 
 
 
 
