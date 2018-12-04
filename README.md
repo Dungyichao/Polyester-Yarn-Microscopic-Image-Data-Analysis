@@ -89,21 +89,21 @@ GIF 5. The examine steps of the image (also see GIF 7).
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
  
 
-We've already have some basic knowledge on the dimension of the circle in the given image, so we can narrow down the radius searching area for example from r = 10 to r = 15 (unit in pixel). The user can enter the MinR and MaxR to set the searching area. We will detect how many pixels which the value (either Green or Red or Blue value) is larger than a given threshold on the circle at given radius (we examine the pixel value every 3 degree on the circle to reduce the calculation time). The number of pixels (vote) should also be larger than a given threshold. </p>
+We've already have some basic knowledge on the dimension of the circle in the given image, so we can narrow down the radius searching space for example from r = 10 to r = 15 (unit in pixel). The user can enter the MinR and MaxR to set the searching space. We will detect how many pixels which the  pixel value (either Green or Red or Blue value) is larger than a given threshold on the virtual circle at given radius (we examine the pixel value every 3 degree on the virtual circle to reduce the calculation time). The number of pixels (vote) should also be larger than a given threshold. </p>
 
 <p align="center">
 <img src="/Image/readme/Circlealgorithm.gif" height="60%" width="60%">   
 </p>
 
 <p align="center">
-GIF 6
+GIF 6. Circle detects based on certain pixel as the center of virtual circle
 </p>
 
-In the above example, for yellow dot as the center of circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
+In the above example, for yellow dot as the center of virtual circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
 
 In another case, say the green dot as the center, we can see r = 10 (count=5), r = 11 (count=12), r = 12 (count=15), r = 13 (count=17), r = 14 (sorry, I forgot to make this one), r = 15 (count=21). If we set the count (vote) threshold = 30, then no radius will be taken into decision. Thus, there is no any circle at the green dot.  <br /> 
 
-The voting process is illustrated in the following GIF. The yellow dot is the center of various circles. The red and the green dots are the examination point. If the red or the green point detects the white pixel when passing it, the vote will plus one for the current radius. <br /> 
+The voting process is illustrated in the following GIF. The yellow dot is the center of various virtual circles. The red and the green dots are the examination point. If the red or the green point detects the white pixel when passing it, the vote will plus one for the current radius. <br /> 
 
 <p align="center">
 <img src="/Image/readme/examine.gif" height="45%" width="45%">   
@@ -115,7 +115,7 @@ GIF 7. Voting Process
 
 We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
 
-The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is, the larger the threshold. The calculation for the threshold is ``` [ 2 * π * ( r - 1  + r + r + 1 ) * Accuracy / 3 ] * [ 3 / 2 ]  ==>  3πr *  Accuracy``` where the accuracy is given by the user. <br />
+The count (vote) threshold is not a fix value. It will vary with the radius. The larger the radius is (thus longer circumference), the larger the threshold should be. The calculation for the threshold is ``` [ 2 * π * ( r - 1  + r + r + 1 ) * Accuracy / 3 ] * [ 3 / 2 ]  ==>  3πr *  Accuracy``` where the accuracy is given by the user. <br />
 
 <p align="center">
 <img src="/Image/readme/threshold.JPG" height="65%" width="65%">  
@@ -134,7 +134,7 @@ If the accuracy is set too high, then the application will hardly detect any cir
  </p> 
  
 <p align="center">
-GIF 8
+GIF 8. Define the group of circles
 </p>
 
 The circles in the same group will be combined to one circle. We use the concept of center of mass to claculate the center of merged circle ( x <sub>merged</sub> , y <sub>merged</sub> ) and the radius ( r <sub>merged</sub> ).  <br />
