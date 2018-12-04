@@ -45,7 +45,7 @@ GIF 3. The user can zoom in the image and do some measurement manually
 
 The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. Second, we need to detect the circle. <br />
 
-The whole process can be summrized into the following flow chart. <br />
+The whole process can be summrized into the following flow chart. Each step will be specified in the following paragraph<br />
 <p align="center">
 <img src="/Image/readme/FlowChart1.png" height="95%" width="95%">   
 </p>
