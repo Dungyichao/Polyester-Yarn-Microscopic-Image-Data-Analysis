@@ -129,7 +129,7 @@ The count (vote) threshold is not a fix value. It will vary with the radius. The
 If the accuracy is set too high, then the application will hardly detect any circle (because the criteria is too high to define a circle). If the accuracy is set too low, then it will be susceptable to the noise and give many circles that are definetely not circles. The following image demonstrate the relationship between the accuracy and the result of circle detection. Circles in the Image 3 have been merged. The term "Misdetect" means the algorithm thinks there is a circle, but the truth is that there is no circle. <br /> 
 
 <p align="center">
-<img src="/Image/readme/Accuracy.png" height="85%" width="85%">  
+<img src="/Image/readme/Accurelation.png" height="85%" width="85%">  
  </p>
  
 <p align="center">
