@@ -70,7 +70,7 @@ GIF 4. Convolution (By OpenCV)
 
 In our application, we first apply **kirsh edge detection** on the selected image, and then we apply the **Sobel edge detection** on the image which has been processed by the kirsh edge detection.  
 <p align="center">
-<img src="/Image/readme/Edgedetection.JPG" height="60%" width="60%">   
+<img src="/Image/readme/Edgedetection1.png" height="70%" width="70%">   
 </p>
 
 <p align="center">
