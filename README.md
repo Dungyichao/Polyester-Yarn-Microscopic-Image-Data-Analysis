@@ -17,11 +17,11 @@ GIF 1. All the function are demonstrated here.
 * Detect each fiber in the yarn automatically and give a roughly measurement of the diameter (unit in pixel) in the cross section of the fiber. <br />
 
 <p align="center">
-<img src="/Image/Auto1.gif" height="80%" width="80%"> 
+<img src="/Image/readme/Autodetect.JPG" height="70%" width="70%">   
 </p>
 
 <p align="center">
-GIF 2. Auto Measure function give the circle detection.
+Image 1. Circles auto detection
 </p>
 
 There are four parameters which require specify by the user. <br />
