@@ -165,7 +165,7 @@ For those who are new to Windows form might be surprised that their application 
 The following gif demonstrates the function of applying the BackgroundWorker class in the form. <br />
 
 <p align="center">
-<img src="/Image/readme/BackgroundWork.gif" height="80%" width="80%">  
+<img src="/Image/BackgroundWork.gif" height="80%" width="80%">  
  </p> 
  
 <p align="center">
