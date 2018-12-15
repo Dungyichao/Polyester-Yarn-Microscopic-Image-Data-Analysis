@@ -34,11 +34,11 @@ There are four parameters which require specify by the user. <br />
 
 * Provide an user interface to manually measure the width in the cross section of the fiber. <br />
 <p align="center">
-<img src="/Image/Manual4.gif" height="80%" width="80%"> 
+<img src="/Image/readme/Manualdetect.JPG" height="90%" width="90%">   
 </p>
 
 <p align="center">
-GIF 3. The user can zoom in the image and do some measurement manually
+Image 2. Circles auto detection
 </p>
 
 # About the Theory <br />
@@ -51,7 +51,7 @@ The whole process can be summrized into the following flow chart. Each step will
 </p>
 
 <p align="center">
-Image 1. Flow chart of the algorithm
+Image 3. Flow chart of the algorithm
 </p>
         
 ### Image Edge Detection <br />
@@ -74,7 +74,7 @@ In our application, we first apply **kirsh edge detection** on the selected imag
 </p>
 
 <p align="center">
-Image 2. Image processing from the original image to gray style with edge detection
+Image 4. Image processing from the original image to gray style with edge detection
 </p>
       
 ### Circle Detection For Unknown Radius <br />
