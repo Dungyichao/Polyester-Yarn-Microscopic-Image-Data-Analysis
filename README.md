@@ -159,6 +159,20 @@ We do the merge process twice to further combine the circles and the result does
 
 # Some Cool Function <br />
 
+### Make Heavy Work in The Background <br />
+For those who are new to Windows form might be surprised that their application just hang there without updating any textboxs or labels untill all the calculation are over. With the BackgroundWorker class, we can easily update the progressbar as well as other variable showing on the form and your application will not freeze when you try to click other buttons during the heavy calculation of the application. Here are two links for your reference : https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.backgroundworker?redirectedfrom=MSDN&view=netframework-4.7.2  and https://www.wpf-tutorial.com/misc/multi-threading-with-the-backgroundworker/ <br />
+
+The following gif demonstrates the function of applying the BackgroundWorker class in the form. <br />
+
+<p align="center">
+<img src="/Image/readme/BackgroundWork.gif" height="80%" width="80%">  
+ </p> 
+ 
+<p align="center">
+GIF 9. Application with BackgroundWork
+</p>
+
+
 ### Zoom in to Draw Line and Measure on the Image <br />
 
 There is a great post which I refer to : https://stackoverflow.com/questions/51138565/how-to-measure-length-of-line-which-is-drawn-on-image-c-sharp <br />
