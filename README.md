@@ -17,7 +17,7 @@ GIF 1. All the function are demonstrated here.
 * Detect each fiber in the yarn automatically and give a roughly measurement of the diameter (unit in pixel) in the cross section of the fiber. <br />
 
 <p align="center">
-<img src="/Image/readme/Autodetect.JPG" height="70%" width="70%">   
+<img src="/Image/readme/Autodetect.JPG" height="90%" width="90%">   
 </p>
 
 <p align="center">
