@@ -38,7 +38,7 @@ There are four parameters which require specify by the user. <br />
 </p>
 
 <p align="center">
-Image 2. Circles auto detection
+Image 2. Circles manual detection
 </p>
 
 # About the Theory <br />
@@ -64,7 +64,7 @@ There are various kind of edge detection algorithm such as Laplacian, Sobel, Kir
 </p>
 
 <p align="center">
-GIF 4. Convolution (By OpenCV)
+GIF 2. Convolution (By OpenCV)
 </p>
 
 
@@ -86,7 +86,7 @@ The application will examine the pixel every 4 columns for every 4 rows in the i
 </p>   
 
 <p align="center">
-GIF 5. The examine steps of the image (also see GIF 7).
+GIF 3. The examine steps of the image (also see GIF 7).
 </p>
      
 We make a simple GIF in the following to demonstrate the algorithm of the Circle Hough Transform. In the GIF, we first determine the pixel which is marked as yellow dot. We make various radius of circles based on that yellow dot. <br />
@@ -99,7 +99,7 @@ We've already have some basic knowledge on the dimension of the circle in the gi
 </p>
 
 <p align="center">
-GIF 6. Circle detects based on certain pixel as the center of virtual circle
+GIF 4. Circle detects based on certain pixel as the center of virtual circle
 </p>
 
 In the above example, for yellow dot as the center of virtual circle, we can see r = 10 (count=0), r = 11 (count=0), r = 12 (count=0), r = 13 (count=20), r = 14 (count=38), r = 15 (count=100). If we set the count (vote) threshold = 30, then only r = 14 and r = 15 will be taken into decision. We select the radius with the largest count (vote) number to be the radius of the center of the circle (the yellow dot in our case).  <br /> 
@@ -113,7 +113,7 @@ The voting process is illustrated in the following GIF. The yellow dot is the ce
 </p> 
 
 <p align="center">
-GIF 7. Voting Process ( Searching space r = 3 ~ r = 6 )
+GIF 5. Voting Process ( Searching space r = 3 ~ r = 6 )
 </p>
 
 We make a little change on the vote system. When determine the radius, say at r = 13, we will also count the vote in r = 12 and r = 14 to r = 13. In this case, the vote number for r = 14 will contain the vote in r = 13 and r = 15. 
@@ -133,7 +133,7 @@ If the accuracy is set too high, then the application will hardly detect any cir
  </p>
  
 <p align="center">
-Image 3. The relationship of the accuracy and the result of circle detection.
+Image 5. The relationship of the accuracy and the result of circle detection.
 </p>
 
 ### Merge Circle <br />
@@ -145,7 +145,7 @@ Image 3. The relationship of the accuracy and the result of circle detection.
  </p> 
  
 <p align="center">
-GIF 8. Define the group of circles
+GIF 6. Define the group of circles
 </p>
 
 The circles in the same group will be combined to one circle. We use the concept of center of mass to claculate the center of merged circle ( x <sub>merged</sub> , y <sub>merged</sub> ) and the radius ( r <sub>merged</sub> ).  <br />
