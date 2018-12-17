@@ -172,9 +172,9 @@ The following gif demonstrates the function of applying the BackgroundWorker cla
 GIF 9. Application with BackgroundWork
 </p>
 
-### Devided Image into Three Parts and Process them together<br />
+### Devides Image into Three Parts and Process them together<br />
 
-Our image will be devided into three parts like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.
+Our image will be devided into three parts like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.The overlape is to make sure those circles on the edge will be detected correctly.
 
 <p align="center">
 <img src="/Image/readme/Devide.png" height="45%" width="45%">  
