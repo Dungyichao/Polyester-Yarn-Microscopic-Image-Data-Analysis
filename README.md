@@ -177,7 +177,7 @@ GIF 9. Application with BackgroundWork
 Our image will be devided into three parts like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.
 
 <p align="center">
-<img src="/Image/readme/Devide.png" height="85%" width="85%">  
+<img src="/Image/readme/Devide.png" height="45%" width="45%">  
  </p>
  
 <p align="center">
