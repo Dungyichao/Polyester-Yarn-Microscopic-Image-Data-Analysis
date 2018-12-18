@@ -164,7 +164,7 @@ The circles in the same group will be combined to one circle. We use the concept
  x <sub>merged</sub> = ( x <sub>1</sub> *  r <sub>1</sub> + x <sub>2</sub> * r <sub>2</sub> + x <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br />
  y <sub>merged</sub> = ( y <sub>1</sub> *  r <sub>1</sub> + y <sub>2</sub> * r <sub>2</sub> + y <sub>3</sub> * r <sub>3</sub> + ..... ) / ( r <sub>1</sub> + r <sub>2</sub> + r <sub>3</sub> + ..... )  <br /> 
 
-We do the merge process twice to further combine the circles and the result does improve. Take the GIF 8 for example, Group 1, Group 2, and Group 3 will form three separate merged circles. However, they are indicating the same ground truth. Thus, we require another merging process to further combine these three circles which are so close to each other. <br /> 
+We do the merge process four times to further combine the circles and the result does improve. Take the GIF 8 for example, Group 1, Group 2, and Group 3 will form three separate merged circles. However, they are indicating the same ground truth. Thus, we require another merging process to further combine these three circles which are so close to each other. <br /> 
 
 # Some Cool Function <br />
 
@@ -183,7 +183,7 @@ GIF 9. Application with BackgroundWork
 
 ### Devides Image into Three Parts and Process them together<br />
 
-Our image will be devided into three parts (two green and one blue) like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.The overlape (denotes as Y in the image) is to make sure those circles on the edge will be detected correctly.
+Our image will be devided into three parts (two green and one blue) like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.The overlape (denotes as Y in the image) is to make sure those circles on the edge will be detected correctly. Each backgroundworker is able to post its own progress during the calculation (so that you can see the progress bar is updating the progress and see the circles are being detected by the algorithm in real time) and give us it's own result when complete. 
 
 <p align="center">
 <img src="/Image/readme/Devide3D1.png" height="75%" width="75%">  
@@ -193,6 +193,7 @@ Our image will be devided into three parts (two green and one blue) like the fol
 Image 6. The image will be devided into three overlapped parts and processed by three backgroundworkers.
 </p>
 
+Notice that an object can only be modified by one backgroundworker at a time. It will be at risk to post each progress from three backgroundworkers to a PictureBox. Thus, we give each backgroundworker a PictureBox for updating it's progress. The progress bar is only updating by the backgroundworker which handle the image in the center (it takes more time to finish due to the larger segment of the image compare to the other two.) Untill the last backgroundworker completes it's task, we ill collect all the circles from each of the backgroundworkers to an array. This array will go through 4 merge process and then the merged circles will be drew on the original image (without edge detection) and posted on the other PictureBox. <br />
         
       
 
