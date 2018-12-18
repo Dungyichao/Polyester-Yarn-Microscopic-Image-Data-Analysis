@@ -25,7 +25,7 @@ Image 1. Circles auto detection
 </p>
 
 <p align="center">
-<img src="/Image/Version3_2Auto.gif" height="80%" width="80%"> 
+<img src="/Image/Version3_2Autofast.gif" height="80%" width="80%"> 
 </p>  
 
  
