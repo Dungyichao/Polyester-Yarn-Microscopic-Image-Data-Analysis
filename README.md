@@ -193,7 +193,7 @@ Our image will be devided into three parts (two green and one blue) like the fol
 Image 6. The image will be devided into three overlapped parts and processed by three backgroundworkers.
 </p>
 
-Notice that an object can only be modified by one backgroundworker at a time. It will be at risk to post each progress from three backgroundworkers to a PictureBox. Thus, we give each backgroundworker a PictureBox for updating it's progress. The progress bar is only updating by the backgroundworker which handle the image in the center (it takes more time to finish due to the larger segment of the image compare to the other two.) Untill the last backgroundworker completes it's task, we ill collect all the circles from each of the backgroundworkers to an array. This array will go through 4 merge process and then the merged circles will be drew on the original image (without edge detection) and posted on the other PictureBox. <br />
+Notice that an object can only be modified by one backgroundworker at a time. It will be at risk to post each progress from three backgroundworkers to a PictureBox. Thus, we give each backgroundworker a PictureBox for updating their progress. The progress bar is only updating by the backgroundworker which handle the image in the center (it takes more time to finish due to the larger segment of the image compare to the other two.) Not untill the last backgroundworker completes it's task, will we collect all the circles from each of the backgroundworkers to an array. This array will go through 4 merge process and then the merged circles will be drew on the original image (without edge detection) and posted on the other PictureBox. <br />
         
       
 
