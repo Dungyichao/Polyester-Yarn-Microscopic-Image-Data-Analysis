@@ -186,7 +186,7 @@ GIF 9. Application with BackgroundWork
 Our image will be devided into three parts like the following image when the auto measurement started. Three backgroundworkers will be initialized for processing these three parts individually so that we can speed up the calculation time.The overlape is to make sure those circles on the edge will be detected correctly.
 
 <p align="center">
-<img src="/Image/readme/Devide.png" height="45%" width="45%">  
+<img src="/Image/readme/Devide3D.png" height="75%" width="75%">  
  </p>
  
 <p align="center">
