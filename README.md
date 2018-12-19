@@ -205,11 +205,12 @@ Image 7. Those three PictureBoxes are for three backgroundworker to update their
 
 If the original input size of the image is (imageW,imageH), then location and the size of these three PictureBoxes are calculated as following <br />
 ```C#
+//original input size of the image is (imageW,imageH)
 int Y = maxR; // maxR is input by user
 
 if (Y > (imageH / 3))
 {
-      Y = imageH * 2 / 9;
+      Y = (imageH * 1 / 3) * (2 / 3);
  }
  
 int total_H = 2 * 555 * imageH / (3 * imageW) + 555 * imageH / (3 * imageW);
@@ -224,9 +225,9 @@ if (total_H > 500)
 {
        total_W = 500 * imageW / imageH;       
        p1H = (int)500 / 3;
-       p2H = (int)((500 / 3) + (2 * 500 * overlap / imageH));
+       p2H = (int)((500 / 3) + (2 * 500 * Y / imageH));
        p3H = (int)500 / 3;    
-       p2y = 500 / 3 - (500 * overlap / imageH);
+       p2y = 500 / 3 - (500 * Y / imageH);
        p3y = 1000 / 3;
        
 }
