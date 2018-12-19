@@ -200,9 +200,38 @@ Notice that an object can only be modified by one backgroundworker at a time. It
  </p>
  
 <p align="center">
-Image 7. Those three PictureBoxs are for three backgroundworker to update their circle detection progress.
+Image 7. Those three PictureBoxes are for three backgroundworker to update their circle detection progress.
 </p>
-      
+
+If the original input size of the image is (imageW,imageH), then location and the size of these three PictureBoxes are calculated as following <br />
+```C#
+int Y = maxR; // maxR is input by user
+
+if (Y > (imageH / 3))
+{
+      Y = imageH * 2 / 9;
+ }
+ 
+int total_H = 2 * 555 * imageH / (3 * imageW) + 555 * imageH / (3 * imageW);
+int total_W = 555;
+int p1H = (int)(555 * imageH / (3 * imageW));
+int p2H = (int)((555 * ((imageH / 3) + (2 * Y))) / imageW);
+int p3H = (int)(555 * imageH / (3 * imageW));
+int p2y = (int)((555 * imageH - 3 * Y * 555) / (3 * imageW));
+int p3y = (int)(2 * 555 * imageH / (3 * imageW));
+
+if (total_H > 500)
+{
+       total_W = 500 * imageW / imageH;       
+       p1H = (int)500 / 3;
+       p2H = (int)((500 / 3) + (2 * 500 * overlap / imageH));
+       p3H = (int)500 / 3;    
+       p2y = 500 / 3 - (500 * overlap / imageH);
+       p3y = 1000 / 3;
+       
+}
+```
+
 
 ### Zoom in to Draw Line and Measure on the Image <br />
 
