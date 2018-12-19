@@ -231,6 +231,15 @@ if (total_H > 500)
        p3y = 1000 / 3;
        
 }
+
+pictureBox1.Location = new Point(0, 0);
+pictureBox1.Size = new Size(total_W, p1H);
+
+pictureBox2.Location = new Point(0, p2y);
+pictureBox2.Size = new Size(total_W, p2H);
+
+pictureBox3.Location = new Point(0, p3y);
+pictureBox3.Size = new Size(total_W, p3H);
 ```
 
 
