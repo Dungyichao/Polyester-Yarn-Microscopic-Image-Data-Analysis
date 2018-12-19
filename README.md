@@ -200,7 +200,7 @@ Notice that an object can only be modified by one backgroundworker at a time. It
  </p>
  
 <p align="center">
-Image 7. Those three PictureBoxes are for three backgroundworker to update their circle detection progress.
+Image 7. Those three PictureBoxes in the UI design are for three backgroundworkers to update their circle detection progress.
 </p>
 
 If the original input size of the image is (imageW,imageH), then location and the size of these three PictureBoxes are calculated as following <br />
