@@ -54,7 +54,7 @@ Image 2. Circles manual detection
 
 The gist of this application is circular object detection. The more percise term is Circle Hough Transform. First, we need to make the edge more clear from the image. Second, we need to detect the circle. <br />
 
-The whole process can be summrized into the following flow chart. Each step will be specified in the following paragraph<br />
+The whole process can be summrized into the following flow chart. Each step will be specified in the following paragraph. Notice that after the edge detection, the image will be devided into 3 parts so that we can process these three parts at the same time. Not untill these three parts are finished will us collect all the detected circles from them and then go through the merge process. <br />
 <p align="center">
 <img src="/Image/readme/FlowChart1.png" height="95%" width="95%">   
 </p>
