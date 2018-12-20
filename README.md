@@ -175,15 +175,6 @@ We do the merge process four times to further combine the circles and the result
 ### Make Heavy Work in The Background <br />
 For those who are new to Windows form might be surprised that their application just hang there without updating any textboxs or labels untill all the calculation are over. With the BackgroundWorker class, we can easily update the progressbar as well as other variable showing on the form and your application will not freeze when you try to click other buttons during the heavy calculation of the application. Here are two links for your reference : https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.backgroundworker?redirectedfrom=MSDN&view=netframework-4.7.2  and https://www.wpf-tutorial.com/misc/multi-threading-with-the-backgroundworker/ <br />
 
-The following gif demonstrates the function of applying the BackgroundWorker class in the form. <br />
-
-<p align="center">
-<img src="/Image/BackgroundWork.gif" height="80%" width="80%">  
- </p> 
- 
-<p align="center">
-GIF 9. Application with BackgroundWork
-</p>
 
 ### Devides Image into Three Parts and Process them together<br />
 
